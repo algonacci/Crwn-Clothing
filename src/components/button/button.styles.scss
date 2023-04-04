@@ -1,13 +1,11 @@
 .button-container {
-  min-width: 165px;
   width: auto;
-  height: 50px;
   letter-spacing: 0.5px;
   line-height: 50px;
   padding: 0 35px 0 35px;
-  font-size: 15px;
+  font-size: 12px;
   background-color: black;
-  color: white;
+  color: rgb(238, 218, 218);
   text-transform: uppercase;
   font-family: "Plus Jakarta Sans";
   font-weight: bolder;
@@ -15,6 +13,7 @@
   cursor: pointer;
   display: flex;
   justify-content: center;
+  align-items: center;
 
   &:hover {
     background-color: white;
@@ -23,12 +22,25 @@
   }
 
   &.google-sign-in {
-    background-color: #4285f4;
-    color: white;
+    background-color: #dfe5f0;
+
+    span {
+      margin: 10px;
+      color: black;
+
+      &:hover {
+        color: white;
+      }
+    }
 
     &:hover {
-      background-color: #357ae8;
+      background-color: #2857a3;
       border: none;
+      color: white;
+
+      span {
+        color: white;
+      }
     }
   }
 

@@ -84,7 +84,12 @@ const SignInForm = () => {
         <div className="buttons-container">
           <Button type="submit">Sign In</Button>
           <Button type="button" buttonType="google" onClick={signInWithGoogle}>
-            Google sign in
+            <img
+              className="w-6 h-6 mr-2"
+              src="ic_google.svg"
+              alt="Google logo"
+            />
+            <span>Sign in with Google</span>
           </Button>
         </div>
       </form>
