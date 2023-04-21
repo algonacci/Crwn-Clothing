@@ -1,6 +1,8 @@
 import { Fragment, useContext } from "react";
 import { Outlet, Link } from "react-router-dom";
 
+import CartIcon from "../../components/cart-icon/cart-icon.component";
+
 import CrwnLogo from "../../assets/crown.svg";
 import "./navigation.styles.scss";
 
@@ -31,6 +33,7 @@ const Navigation = () => {
               SIGN IN
             </Link>
           )}
+          <CartIcon />
         </div>
       </div>
       <Outlet />
